@@ -10,7 +10,7 @@ $(function(){
 		$('.active').removeClass('active');
 		$(this).toggleClass('active');
 		if (navBtn+1 != slideNow){
-			var translateWidth=-$('.viewport').width()*(nsvBtn);
+			var translateWidth=-$('.viewport').width()*(navBtn);
 			$('.sliderwprapper').css({
 				'transform': 'translate('+translateWidth+'px,0)',
 				'-o-transform': 'translate('+translateWidth+'px,0)',
