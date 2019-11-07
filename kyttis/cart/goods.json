@@ -1,0 +1,44 @@
+{
+	"1234":{
+		"name": "Яблоки",
+		"cost": 1.2,
+		"description": "Сочные, спелые",
+		"order": 3,
+		"img": "apple.png"
+	},
+	"1235":{
+		"name": "Вишня",
+		"cost": 2.6,
+		"description": "Кислая, красная",
+		"order": 5,
+		"img": "cherry.png"
+	},
+	"1236":{
+		"name": "Виноград",
+		"cost": 3.2,
+		"description": "Сладкий, синий",
+		"order": 1,
+		"img": "grape.png"
+	},
+	"1237":{
+		"name": "Арбуз",
+		"cost": 5,
+		"description": "Сладкий, красный",
+		"order": 8,
+		"img": "watermelon.png"
+	},
+	"1238":{
+		"name": "Мяч",
+		"cost": 10,
+		"description": "Круглый",
+		"order": 1,
+		"img": "ball.png"
+	},
+	"1239":{
+		"name": "Мороженое",
+		"cost": 1.4,
+		"description": "Сладкое",
+		"order": 2,
+		"img": "icecream.png"
+	}
+}
