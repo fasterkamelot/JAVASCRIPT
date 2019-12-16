@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>quadraticCurveTo()</title>
+	<script src="Modernizr-2.0.6.js"></script>
+	<script>
+		function draw() {
+			//проверка поддержка элемента canvas в браузере
+			if (!Modernizr.canvas) return;
+
+			//поулчение элемента и его графического контекста
+			var canvas=document.getElementById("canvas");
+			var context=canvas.getContext("2d");
+
+			//первая точка
+			context.moveTo(0, 100);
+
+			context.quadraticCurveTo(/*управляющая точка*/50, 0, /*вторая точка*/100, 100);
+
+			context.lineWidth=3;
+			context.strokeStyle="red";
+			context.stroke();
+		}
+
+		if (window.addEventListener)
+			window.addEventListener("load", draw, true);
+	</script>
+</head>
+<body>
+	<canvas id="canvas" height="300" width="300" style="border: 1px solid black;">Ваш браузер не поддерживает элемент <b>Canvas</b></canvas>
+</body>
+</html>

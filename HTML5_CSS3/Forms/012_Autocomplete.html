@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Атрибут autocomplete</title>
+</head>
+<body>
+	<form>
+		<fieldset style="border-color: black;">
+			<legend>Авторизация</legend>
+			<p>
+				<label>
+					Имя пользователя
+					<input type="text" name="username" autocomplete="off" />
+				</label>
+			</p>
+			<p>
+				<label>
+					Пароль
+					<!--
+						autocomplete="off" - атрибут испрользуется для того, чтобы браузер не сохранял данные ввода, для обеспеченя безопасности для критических данных.
+					-->
+					<input type="password" name="pass" autocomplete="off" />
+				</label>
+			</p>
+		</fieldset>
+		<p>
+			<input type="submit" value="Отправить">
+		</p>
+	</form>
+	<a href="http://google.com/">Проверка работы атрибутов формы</a>
+	<p>Перейдите по ссылке, после чего нажмите на кнопку "Back". Обратите внимание, что браузер не запомнил значение в поле ввода пароля.</p>
+</body>
+</html>

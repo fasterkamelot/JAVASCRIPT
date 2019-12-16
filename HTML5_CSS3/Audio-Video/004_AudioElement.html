@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Управление воспроизведением с помощью JS</title>
+</head>
+<body>
+	<input type="button" id="playButton" value="play" />
+
+	<audio src="audioElement">
+		<source src="audio/Vivaldi.mp3">
+		<source src="audio/Vivaldi.ogg">
+	</audio>
+
+	<script>
+		document.getElementById("playButton").onclick = playSound;
+
+		function playSound() {
+			var music=document.getElementById("audioElement");
+			var button=document.getElementById("playButton");
+
+			//если аудиоплеер на паузе
+			if (music.paused) {
+				music.play(); //начать воспроизведение
+				button.value="stop";
+			} else { //иначе
+				music.paused(); //остновить воспроизведение
+				play.value="play";
+			}
+		}
+	</script>
+</body>
+</html>
