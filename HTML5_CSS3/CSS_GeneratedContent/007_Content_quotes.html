@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>quotes</title>
+	<style>
+		p:before {
+			/* открывающая ковычка перед параграфом */
+			content: open-quote;
+		}
+
+		p:after {
+			/* закрвыюзая ковычка перед параграфом */
+			content: close-quote;
+		}
+
+		p.hometown:before {
+			/* перед параграфом с классом hometown ну устанавливать кавычку */
+			content: no-open-quote;
+		}
+
+		p.hometown:after {
+			/* после параграфа с классом hometown ну устанавливать кавычку */
+			content: no-close-quote;
+		}
+	</style>
+</head>
+<body>
+	<p>My name is Homer</p>
+	<p class="hometown">I live in Springfield</p>
+</body>
+</html>

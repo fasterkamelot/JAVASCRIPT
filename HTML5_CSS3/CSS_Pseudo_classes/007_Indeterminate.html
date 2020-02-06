@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>indeterminate</title>
+	<style>
+		/*
+			:indeterminate - элементы в неопределенном состоянии. Состояние задается через JavaScript код.
+		*/
+		:indeterminate + span {
+			background-color: limegreen;
+		}
+	</style>
+
+	<script>
+		window.inload = function() {
+			var inputs = document.querySelectorAll("input[type=checkbox]");
+			for (var i=0; i < inputs.length; i++) {
+				inputs[i].indeterminate = true;
+			}
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<p>
+			<input type="ckeckbox">
+			<span>Option 1</span>
+		</p>
+		<p>
+			<input type="ckeckbox">
+			<span>Option 2</span>
+		</p>
+		<p>
+			<input type="ckeckbox">
+			<span>Option 3</span>
+		</p>
+	</form>
+</body>
+</html>
